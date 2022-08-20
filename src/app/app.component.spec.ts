@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'directivas-custom-angular'`, () => {
+  it(`should have as title 'directivasApp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('directivas-custom-angular');
+    expect(app.title).toEqual('directivasApp');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('directivas-custom-angular app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('directivasApp app is running!');
   });
 });

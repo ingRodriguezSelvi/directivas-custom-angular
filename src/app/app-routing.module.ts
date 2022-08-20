@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'products',
-    loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
+    path: 'productos',
+    loadChildren: () => import('./productos/productos.module').then( m => m.ProductosModule )
   },
   {
     path: '**',
-    redirectTo: 'products'
+    redirectTo: 'productos'
   }
 ];
 
